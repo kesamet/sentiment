@@ -7,7 +7,7 @@ from transformers import DistilBertTokenizer, DistilBertForSequenceClassificatio
 # from flask import Flask, request
 
 MAX_LEN = 256
-FINETUNED_MODEL_PATH = 'models/pytorch_distilbert_news2.bin'
+FINETUNED_MODEL_PATH = 'models/finetuned_distilbert_fin.bin'
 
 TOKENIZER = DistilBertTokenizer.from_pretrained('distilbert-base-cased')
 

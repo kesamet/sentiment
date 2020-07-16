@@ -1,0 +1,37 @@
+{
+    "url": "https://www.bloomberg.com/news/articles/2020-06-18/blackrock-bets-on-increased-esg-enthusiasm-with-four-new-etfs",
+    "sentences": [
+        "Markets BlackRock Bets on Increased ESG Enthusiasm With New ETFs By Claire Ballentine June 19, 2020, 12:11 AM GMT+8 Updated on June 19, 2020, 2:23 AM GMT+8 Firm releases funds focused on environment, social issues Launch aligns with pre-pandemic pledge to ramp up ESG e\ufb00orts BlackRock Inc. is moving forward in ful\ufb01lling Larry Fink\u2019s commitment to tackling the climate crisis with a slate of exchange-traded funds.",
+        "The asset manager launched several ETFs that track companies using environmental, social and governance criteria on Thursday.",
+        "Among the changes BlackRock\u2019s chief outlined in his January letter was making sustainability integral to portfolio construction and risk management.",
+        "Fink pledged to double sustainable ETF o\ufb00erings, push index providers to expand their environmental, social and governance benchmarks and drop thermal coal producers from BlackRock\u2019s approximately $1.8 trillion in active strategies.",
+        "Investor interest in value-based and sustainable strategies has surged amid protests against racism and a deadly outbreak that has infected more than 8.3 million people around the world.",
+        "\u201cOne thing that has emerged as a result of the virus and the lockdown is a renewed appreciation for the environment broadly speaking,\u201d said Emily Roland, co-chief investment strategist at John Hancock Investment Management.",
+        "The new suite of BlackRock funds includes: the iShares ESG Aware Conservative Allocation ETF (EAOK); the iShares ESG Aware Moderate Allocation ETF (EAOM); the iShares ESG Aware Growth Allocation ETF (EAOR); and the iShares ESG Aware Aggressive Allocation ETF (EAOA).",
+        "Each has a 0.18% expense ratio.",
+        "BlackRock has also \ufb01led for four ESG funds that provide exposure to companies with higher scores in that category while also screening for controversial activities such as fossil fuels, palm oil, for-pro\ufb01t prisons and weapons.",
+        "Two of them -- the iShares ESG Advanced MSCI USA ETF (USXF) and the iShares ESG Advanced MSCI EAFE ETF (DMXF) -- launched on Thursday as well.",
+        "\u201cThis strong demand across our global wealth and institutional clients is driving more innovation in index and product development and portfolio solutions,\u201d the \ufb01rm said in a statement.",
+        "After taking in a record $4 billion in April, ETFs focused on ESG have seen $52 million in out\ufb02ows so far this month, according to data compiled by Bloomberg.",
+        "Three BlackRock products -- ESGU, ESGE, ESGD -- have lured $8.5 billion out of the total $13.1 billion in\ufb02ows for the category this year.",
+        "(Updates with additional fund details in sixth paragraph) In this article BLK BLACKROCK INC 556.77 USD +1.54 +0.28% XW1 Generic 1st 'XW' Future 52.50 USD/MT +0.40 +0.77% CL1 WTI Crude 39.78 USD/bbl.",
+        "+0.94 +2.42% Terms of Service Do Not Sell My Info (California)Trademarks Privacy Policy  \u00a92020 Bloomberg L.P. All Rights Reserved Careers Made in NYC Advertise Ad Choices  Contact Us Help"
+    ],
+    "y_prob": [
+        0.958209753036499,
+        0.9589662551879883,
+        0.9316853284835815,
+        0.9505639672279358,
+        0.3729724884033203,
+        0.9371629357337952,
+        0.961450457572937,
+        0.887693464756012,
+        0.9037169218063354,
+        0.9597991108894348,
+        0.9665127992630005,
+        0.9588862061500549,
+        0.9592844843864441,
+        0.9202809929847717,
+        0.9211138486862183
+    ]
+}
