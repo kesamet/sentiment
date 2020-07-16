@@ -4,24 +4,22 @@ Script for serving.
 import torch
 from torch.utils.data import Dataset, DataLoader
 from transformers import DistilBertTokenizer, DistilBertForSequenceClassification
+# from flask import Flask, request
 
-
-class CFG:
-    """Configuration."""
-    max_len = 256
-    finetuned_model_path = 'models/pytorch_distilbert_news2.bin'
-
+MAX_LEN = 256
+FINETUNED_MODEL_PATH = 'models/pytorch_distilbert_news2.bin'
 
 TOKENIZER = DistilBertTokenizer.from_pretrained('distilbert-base-cased')
 
 DEVICE = torch.device("cpu")
 MODEL = DistilBertForSequenceClassification.from_pretrained(
     'distilbert-base-cased', num_labels=2)
-MODEL.load_state_dict(torch.load(CFG.finetuned_model_path, map_location=DEVICE))
+MODEL.load_state_dict(torch.load(FINETUNED_MODEL_PATH, map_location=DEVICE))
 MODEL.eval()
 
 
-class Triage(Dataset):
+class TextDataset(Dataset):
+    """Text dataset."""
     def __init__(self, data, tokenizer, max_len):
         self.len = len(data)
         self.data = data
@@ -53,21 +51,20 @@ class Triage(Dataset):
 
 # pylint: disable=too-many-locals
 def predict(request_json):
-    """Predict."""
-    texts = request_json["texts"]
-    test_dataset = Triage(texts, TOKENIZER, CFG.max_len)
+    """Predict function."""
+    sentences = request_json["sentences"]
+    test_dataset = TextDataset(sentences, TOKENIZER, MAX_LEN)
     test_loader = DataLoader(test_dataset, batch_size=8, shuffle=False, num_workers=0)
 
     y_prob = list()
     with torch.no_grad():
-        for _, data in enumerate(test_loader, 0):
+        for data in test_loader:
             ids = data['ids'].to(DEVICE)
             mask = data['mask'].to(DEVICE)
 
             logits = MODEL(ids, attention_mask=mask)[0]
             probs = torch.softmax(logits, axis=1)
             y_prob.extend(probs[:, 1].cpu().numpy().tolist())
-
     return y_prob
 
 
